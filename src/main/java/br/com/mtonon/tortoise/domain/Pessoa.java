@@ -19,9 +19,7 @@ public class Pessoa {
 
 	public Pessoa(Integer id, String nome, Integer idade) {
 		super();
-		this.id = id;
-		this.nome = nome;
-		this.idade = idade;
+
 	}
 
 	public LocalDate getDtNascimento(){
