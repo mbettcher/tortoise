@@ -1,6 +1,7 @@
 package br.com.mtonon.tortoise.domain;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Pessoa {
 	
@@ -20,6 +21,23 @@ public class Pessoa {
 	public Pessoa(Integer id, String nome, Integer idade) {
 		super();
 
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pessoa other = (Pessoa) obj;
+		return Objects.equals(id, other.id);
 	}
 
 	public Pessoa(){
