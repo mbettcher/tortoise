@@ -24,6 +24,10 @@ public class Pessoa {
 		this.idade = idade;
 	}
 
+	public Pessoa(){
+		super();
+	}
+
 	public LocalDate getDtNascimento(){
 		return this.dtNascimento;
 	}
