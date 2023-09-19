@@ -24,6 +24,11 @@ public class Pessoa {
 		this.idade = idade;
 	}
 
+	public String toString(){
+		return "Id: " + this.id 
+		+ ", Nome: " + this.nome;
+	}
+
 	public Pessoa(){
 		super();
 	}
