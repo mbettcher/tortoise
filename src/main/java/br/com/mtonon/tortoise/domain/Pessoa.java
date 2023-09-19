@@ -22,6 +22,10 @@ public class Pessoa {
 
 	}
 
+	public Pessoa(){
+		super();
+	}
+
 	public LocalDate getDtNascimento(){
 		return this.dtNascimento;
 	}
