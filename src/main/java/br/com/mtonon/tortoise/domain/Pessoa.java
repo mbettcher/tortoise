@@ -5,13 +5,11 @@ public class Pessoa {
 	private String nome;
 	private Integer idade;
 
-	public Pessoa(Integer id, String nome, Integer idade) {
+	public Pessoa() {
 		super();
-		this.id = id;
-		this.nome = nome;
-		this.idade = idade;
+
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
