@@ -1,15 +1,35 @@
 package br.com.mtonon.tortoise.domain;
+
+import java.time.LocalDate;
+
 public class Pessoa {
 	
 	private Integer id;
 	private String nome;
 	private Integer idade;
+	private LocalDate dtNascimento;
+
+	public Pessoa(Integer id, String nome, Integer idade, LocalDate dtNascimento) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.idade = idade;
+		this.dtNascimento = dtNascimento;
+	}
 
 	public Pessoa(Integer id, String nome, Integer idade) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.idade = idade;
+	}
+
+	public LocalDate getDtNascimento(){
+		return this.dtNascimento;
+	}
+
+	public void setDtNascimento(LocalDate dtNascimento) {
+		this.dtNascimento = dtNascimento;
 	}
 	
 	public Integer getId() {
